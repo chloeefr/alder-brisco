@@ -8,12 +8,3 @@ main {
     margin-left: 0;
     margin-right: 0;
 }
-
-.main__image {
-    background-size: cover;
-    height: 90vh;
-    @media only screen and (min-width: $screen-md) {
-        background-position: bottom center;
-        height: 80vh;
-    }
-}

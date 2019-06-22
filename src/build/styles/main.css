@@ -2305,17 +2305,6 @@ main {
   margin-right: 0;
 }
 
-.main__image {
-  background-size: cover;
-  height: 90vh;
-}
-@media only screen and (min-width: 61rem) {
-  .main__image {
-    background-position: bottom center;
-    height: 80vh;
-  }
-}
-
 html,
 body {
   height: 100%;
@@ -2332,34 +2321,53 @@ img {
   width: 100%;
 }
 
+.main-content {
+  text-align: center;
+}
+@media only screen and (min-width: 46rem) {
+  .main-content {
+    margin: 0 auto 2rem;
+    max-width: 60%;
+    width: 100%;
+  }
+}
+
 html, body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 h1, h2,
 h3, h4, h5 {
   color: #333333;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
+  font-family: "Work Sans", sans-serif;
 }
 
 h1, h2,
 h3 {
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.25rem;
 }
 
 h4, h5 {
   letter-spacing: 0.25rem;
 }
 
-p, span {
-  font-family: "Montserrat", sans-serif;
+p, span, a, address {
+  font-family: "Work Sans", sans-serif;
   font-size: 0.925rem;
   font-weight: 200;
   line-height: 1.8;
   margin-bottom: 0;
   margin-top: 0;
   color: #333333;
+}
+
+ul {
+  margin-bottom: 1rem;
+  margin-left: 0;
+}
+
+ul li {
+  list-style: none;
 }
 
 a {
@@ -2410,10 +2418,10 @@ h6 {
 }
 
 header {
-  position: absolute;
-  z-index: 10;
-  top: 2%;
-  left: 2%;
+  text-align: center;
+}
+header .row {
+  flex-direction: column;
 }
 
 footer {

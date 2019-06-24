@@ -21,3 +21,9 @@ main {
 ul {
     padding-left: 0;
 }
+
+@media only screen and (min-width: $screen-md) {
+    ul {
+        max-width: 250px;
+    }
+}

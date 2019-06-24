@@ -3,13 +3,6 @@ footer {
     display: flex;
     justify-content: center;
     text-align: center;
-    ul {
-        padding: 0;
-        margin: $spacing-s;
-        li {
-            list-style: none;
-        }
-    }
 
     .footer-row {
         justify-content: center;

@@ -2318,6 +2318,11 @@ ul {
   padding-left: 0;
 }
 
+@media only screen and (min-width: 61rem) {
+  ul {
+    max-width: 250px;
+  }
+}
 html,
 body {
   height: 100%;
@@ -2452,13 +2457,6 @@ footer {
   display: flex;
   justify-content: center;
   text-align: center;
-}
-footer ul {
-  padding: 0;
-  margin: 0.5rem;
-}
-footer ul li {
-  list-style: none;
 }
 footer .footer-row {
   justify-content: center;

@@ -15,11 +15,21 @@ img {
 }
 
 .main-content {
-  text-align: center;
-  
-  @media only screen and (min-width: $screen-sm) {
+  padding: 0 $spacing-m;
+}
+
+.contact-row {
+  flex-direction: column;
+  margin-bottom: $spacing-m;
+}
+@media only screen and (min-width: $screen-md) {
+  .main-content {
     margin: 0 auto 2rem;
-    max-width: 60%;
-    width: 100%;
+    max-width: 80%;
+  }
+  
+  .contact-row {
+      flex-flow: row wrap;
+      justify-content: space-around;
   }
 }

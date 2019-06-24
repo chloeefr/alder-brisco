@@ -1,20 +1,27 @@
 footer {
+    padding: 0 $spacing-m;
+    display: flex;
+    justify-content: center;
     text-align: center;
-
     ul {
         padding: 0;
-        margin: $spacing-s 0;
+        margin: $spacing-s;
         li {
             list-style: none;
         }
     }
 
-    .row div {
-        margin-bottom: $spacing-m;
+    .footer-row {
+        justify-content: center;
     }
 
     .icon {
         width: 30px;
         height: 30px;
+    }
+    @media only screen and (min-width: $screen-md) {
+        .footer-row {
+            justify-content: space-between;
+        }
     }
 }

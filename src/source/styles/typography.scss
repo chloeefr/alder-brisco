@@ -60,10 +60,6 @@ h6 {
   font-size: rem-calc(14);
 }
 
-a {
-  text-decoration: none;
-}
-
 p, span {
     font-family: $base-family;
     font-size: rem-calc(22);
@@ -74,24 +70,10 @@ p, span {
     color: $primary-color;
 }
 
-address {
-  color: $primary-color;
-  font-style: normal;
-  font-weight: 500;
-}
-
-ul {
-  margin-bottom: 1rem;
-  margin-left: 0;
-}
-
-ul li {
-  list-style: none;
-}
-
 a {
   color: $primary-color;
   cursor: pointer;
+  text-decoration: none;
   &:hover,
   &:focus {
     cursor: pointer;

@@ -12,9 +12,16 @@ img {
 }
 
 ul {
-  margin-top: 0;
+  margin-bottom: 1rem;
+  margin-left: 0;
+  margin-top: 0; 
   padding-left: 0;
   @media only screen and (min-width: $screen-md) {
+    line-height: 18px;
     max-width: 220px;
   }
+}
+
+ul li {
+  list-style: none;
 }

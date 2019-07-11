@@ -2379,13 +2379,20 @@ img {
 }
 
 ul {
+  margin-bottom: 1rem;
+  margin-left: 0;
   margin-top: 0;
   padding-left: 0;
 }
 @media only screen and (min-width: 1024px) {
   ul {
+    line-height: 18px;
     max-width: 220px;
   }
+}
+
+ul li {
+  list-style: none;
 }
 
 html, body {
@@ -2452,10 +2459,6 @@ h6 {
   font-size: 0.875rem;
 }
 
-a {
-  text-decoration: none;
-}
-
 p, span {
   font-family: "Work Sans", sans-serif;
   font-size: 1.375rem;
@@ -2466,24 +2469,10 @@ p, span {
   color: #1C1C1C;
 }
 
-address {
-  color: #1C1C1C;
-  font-style: normal;
-  font-weight: 500;
-}
-
-ul {
-  margin-bottom: 1rem;
-  margin-left: 0;
-}
-
-ul li {
-  list-style: none;
-}
-
 a {
   color: #1C1C1C;
   cursor: pointer;
+  text-decoration: none;
 }
 a:hover, a:focus {
   cursor: pointer;

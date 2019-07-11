@@ -1,6 +1,6 @@
 .container {
-    display: flex;
-    flex-direction: column;
+    @include flexbox();
+    @include flex-direction(column);
     margin: 0 auto;
     max-width: 1024px;
     width: 100%;
@@ -17,13 +17,13 @@ main {
 
 @media only screen and (min-width: $screen-md) {
     .container {
-        display: flex;
-        flex-direction: row;
-        flex-flow: row wrap;
+        @include flexbox();
+        @include flex-direction(row);
+        @include flex-flow(row wrap);
         margin: $gutter-mobile auto 0;
 
         & > * {
-            flex: 1 42%;
+            @include flex(1 42%);
         }
     }
 }

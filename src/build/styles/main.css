@@ -2295,7 +2295,14 @@
 }
 
 .container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
   margin: 0 auto;
   max-width: 1024px;
@@ -2313,12 +2320,26 @@ main {
 
 @media only screen and (min-width: 1024px) {
   .container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     margin: 30px auto 0;
   }
   .container > * {
+    -webkit-box-flex: 1 42%;
+    -moz-box-flex: 1 42%;
+    -webkit-flex: 1 42%;
+    -ms-flex: 1 42%;
     flex: 1 42%;
   }
 }
@@ -2346,7 +2367,6 @@ main {
 
 html,
 body {
-  height: 100%;
   font-size: 100%;
   margin: 0;
   padding: 0;
@@ -2390,13 +2410,12 @@ h4, h5 {
 
 h1 {
   font-size: 2.5rem;
-  font-weight: normal;
+  font-weight: 500;
   margin-bottom: 30px;
 }
 @media only screen and (min-width: 1024px) {
   h1 {
     font-size: 4.375rem;
-    font-weight: 500;
     letter-spacing: -0.0875rem;
     margin-top: 0;
   }
@@ -2486,6 +2505,9 @@ header {
   margin: 0 30px;
 }
 header .row {
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 @media only screen and (min-width: 1024px) {
@@ -2495,7 +2517,11 @@ header .row {
 }
 
 footer {
-  margin: 0 30px;
+  margin: 0 30px 120px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 footer li,
@@ -2503,6 +2529,9 @@ footer li a {
   font-weight: 300;
 }
 footer .contact-row {
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
   margin-bottom: 1rem;
 }
@@ -2515,9 +2544,20 @@ footer .contact-row {
     width: 100%;
   }
   footer .contact-row {
+    -webkit-align-items: baseline;
+    -moz-align-items: baseline;
+    -ms-align-items: baseline;
+    -ms-flex-align: baseline;
     align-items: baseline;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
     justify-content: space-between;
+    -ms-flex-pack: space-between;
     margin-bottom: 0;
     width: 83%;
   }

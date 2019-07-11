@@ -1,20 +1,31 @@
 footer {
-    padding: 0 $spacing-m;
+    margin: 0 $gutter-mobile;
     display: flex;
-    justify-content: center;
-    text-align: center;
 
-    .footer-row {
-        justify-content: center;
+    li,
+    li a {
+        font-weight: 300;
     }
 
-    .icon {
-        width: 30px;
-        height: 30px;
+    .contact-row {
+        flex-direction: column;
+        margin-bottom: $spacing-m;
     }
+
     @media only screen and (min-width: $screen-md) {
-        .footer-row {
+        border-top: 1px solid $primary-color;
+        margin: 0 $gutter;
+        
+        h3 {
+            width: 100%;
+        }
+
+        .contact-row {
+            align-items: baseline;
+            flex-flow: row wrap;
             justify-content: space-between;
+            margin-bottom: 0;
+            width: 83%;
         }
     }
 }

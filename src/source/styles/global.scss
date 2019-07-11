@@ -1,12 +1,10 @@
 html,
 body {
   height: 100%;
-  width: 100%;
+  font-size: 100%;
   margin: 0;
   padding: 0;
-  left: 0;
-  top: 0;
-  font-size: 100%;
+  width: 100%;
 }
 
 img {
@@ -14,22 +12,10 @@ img {
   width: 100%;
 }
 
-.main-content {
-  padding: 0 $spacing-m;
-}
-
-.contact-row {
-  flex-direction: column;
-  margin-bottom: $spacing-m;
-}
-@media only screen and (min-width: $screen-md) {
-  .main-content {
-    margin: 0 auto 2rem;
-    max-width: 80%;
-  }
-  
-  .contact-row {
-      flex-flow: row wrap;
-      justify-content: space-evenly;
+ul {
+  margin-top: 0;
+  padding-left: 0;
+  @media only screen and (min-width: $screen-md) {
+    max-width: 220px;
   }
 }

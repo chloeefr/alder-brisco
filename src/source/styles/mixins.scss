@@ -47,3 +47,8 @@
     -moz-animation-delay: 2.4s;
     animation-delay: 2.4s;
 }
+
+@function rem-calc($size) {
+  $remSize: $size / 16;
+  @return #{$remSize}rem;
+}

@@ -40,6 +40,7 @@ h3 {
   font-size: rem-calc(16);
   line-height: rem-calc(18);
   margin-top: 0;
+  font-weight: $font-weight-heavy;
   @media only screen and (min-width: $screen-md) {
     margin-bottom: $gutter-mobile;
     margin-top: rem-calc(15);
